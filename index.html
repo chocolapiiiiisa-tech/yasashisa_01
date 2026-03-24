@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ヤサシサロジック株式会社 |「ヤサシサ」で問い、「ロジック」で解く。</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --base-color: #F5F5F0;
+            --main-color: #0F2350;
+            --accent-color: #ED6D3D;
+        }
+
+        body {
+            background-color: var(--base-color);
+            color: var(--main-color);
+            font-family: 'Noto Sans JP', sans-serif;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .vertical-text {
+            font-family: 'Noto Serif JP', serif;
+        }
+
+        .vertical-text {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+
+        .bg-washi {
+            background-image: url('https://www.transparenttextures.com/patterns/natural-paper.png');
+        }
+
+        .border-main { border-color: var(--main-color); }
+        .text-main { color: var(--main-color); }
+        .bg-main { background-color: var(--main-color); }
+        .text-accent { color: var(--accent-color); }
+        .bg-accent { background-color: var(--accent-color); }
+
+        .btn-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(15, 35, 80, 0.2);
+        }
+
+        /* 和の装飾用 */
+        .seigaiha {
+            background-color: var(--base-color);
+            background-image: radial-gradient(circle at 100% 150%, var(--main-color) 24%, var(--base-color) 25%, var(--base-color) 28%, var(--main-color) 29%, var(--main-color) 36%, var(--base-color) 36%, var(--base-color) 40%, var(--main-color) 41%, var(--main-color) 48%, var(--base-color) 48%);
+            background-size: 40px 20px;
+            opacity: 0.05;
+        }
+
+        header {
+            border-bottom: 1px solid rgba(15, 35, 80, 0.1);
+            backdrop-filter: blur(8px);
+        }
+    </style>
+</head>
+<body class="bg-washi">
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 transition-all duration-300 bg-white/80">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter text-main">
+                ヤサシサロジック<span class="text-xs font-normal ml-2">株式会社</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#home" class="hover:text-accent transition">ホーム</a>
+                <a href="#reason" class="hover:text-accent transition">ヤサシサの理由</a>
+                <a href="#services" class="hover:text-accent transition">お品書き</a>
+                <a href="#works" class="hover:text-accent transition">仕事のあとさき</a>
+                <a href="#company" class="hover:text-accent transition">帳場</a>
+                <a href="#contact" class="bg-main text-white px-4 py-2 rounded-full btn-hover transition">御用聞き</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative z-10">
+                <div class="inline-block border-l-4 border-accent pl-4 mb-6">
+                    <p class="text-lg font-medium">お節介なほどの対話で、難しいDXを、やさしい物語へ。</p>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-8">
+                    「ヤサシサ」で問い、<br>
+                    「ロジック」で解く。
+                </h1>
+                <p class="text-xl leading-relaxed mb-10 opacity-80">
+                    DXは、効率化の前に「対話」からはじまる。<br>
+                    私たちは、あなたの会社の一番の理解者でありたい。<br>
+                    丁寧すぎるヒアリングから生まれる、筋の通った優しさとわかりやすさを届けます。
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="bg-main text-white px-8 py-4 rounded-full font-bold btn-hover transition">無料相談を予約する</a>
+                    <a href="#services" class="border-2 border-main px-8 py-4 rounded-full font-bold hover:bg-main hover:text-white transition">お品書きを見る</a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute inset-0 seigaiha rounded-full"></div>
+                <div class="relative z-10 flex justify-center">
+                    <div class="vertical-text text-3xl md:text-5xl font-bold tracking-widest text-main opacity-20 select-none">
+                        丁寧すぎるヒアリング
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1523211424790-b1473ac79517?auto=format&fit=crop&q=80&w=800" alt="和風モダンのオフィスイメージ" class="rounded-2xl shadow-2xl w-4/5 ml-8 object-cover aspect-[3/4]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reason Section -->
+    <section id="reason" class="py-24 bg-white/50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12">ヤサシサの理由</h2>
+                <p class="text-xl leading-loose mb-8">
+                    「DX」という言葉が、どこか冷たく、他人事に聞こえていませんか？<br>
+                    効率化は大事。でも、そこで働く「人」の気持ちが置いてけぼりでは意味がありません。
+                </p>
+                <div class="grid md:grid-cols-2 gap-8 mt-16 text-left">
+                    <div class="p-8 border-t-2 border-accent">
+                        <h3 class="text-xl font-bold mb-4">膝を突き合わせて「聞く」</h3>
+                        <p class="opacity-80">テンプレートは使いません。あなたの会社専用の解を導き出すため、まずは「なんとなく不便」の正体を一緒に突き止めます。</p>
+                    </div>
+                    <div class="p-8 border-t-2 border-accent">
+                        <h3 class="text-xl font-bold mb-4">ロジックの前に、共感を。</h3>
+                        <p class="opacity-80">正論を押し付けるのではなく、現場の痛みを理解すること。それが結果的に、一番近道なDXになると信じています。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services (Oshinagaki) Section -->
+    <section id="services" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-bold mb-4">お品書き</h2>
+                    <p class="text-lg">あなたの会社を、もっと楽に、もっと面白く。</p>
+                </div>
+                <div class="text-accent font-bold text-xl vertical-text hidden md:block">
+                    御用承ります
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Service 1 -->
+                <div class="bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 border border-main/5">
+                    <span class="text-xs font-bold uppercase tracking-widest text-accent mb-4 block">Application</span>
+                    <h3 class="text-2xl font-bold mb-6">手のひらサイズの「専用アプリ」</h3>
+                    <p class="leading-relaxed mb-8 opacity-70">
+                        現場の「これが欲しかった」を形にします。使いやすさはもちろん、使うのが少し楽しくなるような、愛着のわくツールをご提供。
+                    </p>
+                    <ul class="space-y-3 mb-10">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-accent rounded-full mr-3"></span> 独自業務のアプリ化</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-accent rounded-full mr-3"></span> スマホ/タブレット対応</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-accent rounded-full mr-3"></span> 直感的なUIデザイン</li>
+                    </ul>
+                    <a href="#contact" class="text-main font-bold border-b-2 border-main pb-1 hover:text-accent hover:border-accent transition">詳細を尋ねる</a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 border border-main/5">
+                    <span class="text-xs font-bold uppercase tracking-widest text-accent mb-4 block">Efficiency</span>
+                    <h3 class="text-2xl font-bold mb-6">ワクワクする「業務効率化」</h3>
+                    <p class="leading-relaxed mb-8 opacity-70">
+                        ムダな時間を、本来やるべき創造的な時間へ。単なるオートメーションではなく、働く人の心地よさを追求した仕組みを構築。
+                    </p>
+                    <ul class="space-y-3 mb-10">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-accent rounded-full mr-3"></span> ワークフローの再設計</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-accent rounded-full mr-3"></span> 既存ツールの連携支援</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-accent rounded-full mr-3"></span> DX研修・マインドセット</li>
+                    </ul>
+                    <a href="#contact" class="text-main font-bold border-b-2 border-main pb-1 hover:text-accent hover:border-accent transition">詳細を尋ねる</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flow Section -->
+    <section class="py-24 bg-main text-white relative overflow-hidden">
+        <div class="absolute inset-0 seigaiha opacity-10"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <h2 class="text-3xl font-bold mb-16 text-center">導入の道しるべ</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="text-4xl font-serif mb-6 text-accent italic">壱</div>
+                    <h3 class="text-xl font-bold mb-4">丁寧すぎるヒアリング</h3>
+                    <p class="opacity-70">まずはお茶を飲むように。あなたの会社の悩みや夢を、じっくりとお聞きします（無料相談）。</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-serif mb-6 text-accent italic">弐</div>
+                    <h3 class="text-xl font-bold mb-4">ヤサシサとロジックの提案</h3>
+                    <p class="opacity-70">聞いた内容を整理し、現場の優しさと、確かな論理を掛け合わせた最適なプランをご提示します。</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-serif mb-6 text-accent italic">参</div>
+                    <h3 class="text-xl font-bold mb-4">二人三脚での実装</h3>
+                    <p class="opacity-70">作って終わりではありません。実際に使いこなし、現場が笑顔になるまで並走し続けます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section id="contact" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="bg-white rounded-[3rem] p-12 md:p-20 text-center shadow-2xl relative overflow-hidden">
+                <div class="relative z-10">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-8">
+                        まずは、お茶でも飲むように、<br>お悩みを聞かせてください。
+                    </h2>
+                    <p class="text-lg mb-12 opacity-80">
+                        「何から話せばいいかわからない」その状態のままで構いません。<br>
+                        ヤサシサロジックが、糸を解くように丁寧に寄り添います。
+                    </p>
+                    <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
+                        <button class="bg-accent text-white px-10 py-5 rounded-full font-bold text-lg btn-hover transition" onclick="alert('お問い合わせフォームへ移動します（デモ）')">
+                            御用聞き（無料相談）はこちら
+                        </button>
+                        <button class="bg-main text-white px-10 py-5 rounded-full font-bold text-lg btn-hover transition">
+                            資料をダウンロードする
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-main text-white/60 py-12">
+        <div class="container mx-auto px-6 border-t border-white/10 pt-12">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0">
+                    <div class="text-2xl font-bold text-white mb-2">ヤサシサロジック株式会社</div>
+                    <p class="text-sm italic">Yasashisa Logic Co., Ltd.</p>
+                </div>
+                <div class="flex space-x-12 text-sm">
+                    <div>
+                        <p class="text-white font-bold mb-4">探索</p>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-white transition">ホーム</a></li>
+                            <li><a href="#" class="hover:text-white transition">ヤサシサの理由</a></li>
+                            <li><a href="#" class="hover:text-white transition">お品書き</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="text-white font-bold mb-4">社交</p>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-white transition">X (Twitter)</a></li>
+                            <li><a href="#" class="hover:text-white transition">Instagram</a></li>
+                            <li><a href="#" class="hover:text-white transition">Note</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-20 text-center text-xs border-t border-white/5 pt-8">
+                &copy; 2026 Yasashisa Logic Co., Ltd. 「ヤサシサ」で問い、「ロジック」で解く。
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
